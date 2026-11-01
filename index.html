@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Samajh | Every official letter, made clear</title>
+<meta name="description" content="Paste any confusing official letter and get a plain-language explanation, the deadline, and a step-by-step plan in English or Hindi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Mukta:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="#top">Samajh</a>
+  <a class="nav-link" href="#try">Try it</a>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-copy">
+      <h1>Every letter,<br><em>made clear.</em></h1>
+      <p class="lead">Bills, bank notices, tax and court letters are written to be filed, not understood. Paste yours and Samajh tells you what it means, what is due, and what to do next, in English or Hindi.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#try">Explain my letter</a>
+        <span class="note">Free. Runs in your browser. Your letter is never uploaded.</span>
+      </div>
+    </div>
+
+    <figure class="letter" aria-label="Example letter with key details highlighted">
+      <div class="letter-head">NOTICE OF DISCONNECTION</div>
+      <p>Consumer No. 4471920</p>
+      <p>Our records show that charges of <mark class="m1">Rs. 4,820</mark> remain unpaid despite earlier reminders.</p>
+      <p>Failing payment <mark class="m2">within 7 days</mark> of this notice, supply to your premises shall be <mark class="m3">disconnected</mark> without further notice under Section 56.</p>
+      <div class="letter-foot">Executive Engineer</div>
+      <figcaption>Samajh finds the three things that matter.</figcaption>
+    </figure>
+  </section>
+
+  <section class="try" id="try">
+    <div class="sheet">
+      <div class="pane in">
+        <div class="pane-top">
+          <label for="letter">Paste your letter</label>
+          <button class="ghost" id="sample" type="button">Use a sample</button>
+        </div>
+        <textarea id="letter" placeholder="Paste the text of any notice here: electricity, bank, tax, court, college..."></textarea>
+        <div class="pane-bottom">
+          <div class="seg" role="group" aria-label="Answer language">
+            <button type="button" class="on" data-lang="en">English</button>
+            <button type="button" data-lang="hi">हिन्दी</button>
+          </div>
+          <button class="btn btn-primary" id="go" type="button">Explain</button>
+        </div>
+      </div>
+
+      <div class="pane out" id="out" aria-live="polite">
+        <div class="empty">
+          <p class="empty-title">Your plan appears here.</p>
+          <p>Paste a letter and press Explain. You will get the meaning, the deadline, and what to do first.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why">
+    <div>
+      <h2>Missed deadlines cost people money.</h2>
+      <p>A disconnection notice, a late fee, a court date. Most people do not ignore these letters. They simply cannot read them. Samajh exists so that nobody has to pay an agent just to be told what a letter says.</p>
+    </div>
+    <ul class="points">
+      <li><strong>Plain language</strong>Short sentences, no legal jargon.</li>
+      <li><strong>Hindi and English</strong>Switch the answer language in one tap.</li>
+      <li><strong>Scam check</strong>Flags OTP requests, suspicious links and fake prize claims.</li>
+      <li><strong>Private</strong>Everything is analysed on your device.</li>
+    </ul>
+  </section>
+</main>
+
+<footer class="foot">
+  <span>Samajh is a reading aid, not legal advice. For serious matters, speak to a lawyer or the issuing office.</span>
+  <span>Built at Hacktoberfest Hack Day Kanpur</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
